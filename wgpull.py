@@ -3,7 +3,7 @@
 import requests
 from bs4 import BeautifulSoup as bs
 
-uri = 'https://alpha.wallhaven.cc/search?q=%23nature&categories=100&purity=100&atleast=2560x1440&sorting=random&order=desc&page=3'
+uri = 'https://wallhaven.cc/search?q=nature&categories=100&purity=100&atleast=2560x1440&sorting=random&order=desc'
 
 try:
     r = requests.get(uri)
