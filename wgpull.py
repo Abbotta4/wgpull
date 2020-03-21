@@ -20,8 +20,8 @@ r = get(uri) # Load a results page
 soup = bs(r.text, 'html.parser')
 uri = soup.main.ul.li.a['href']
 r = get(uri) # get the first link on the resutls page
-soup = bs(r.text, 'html.parser')    
-uri = 'https://' + soup.main.img['src'][2:]
+soup = bs(r.text, 'html.parser')
+uri = soup.main.img['src']
 r = get(uri) # download the source image
 filename = './wallpaper.' + uri[-3:]
 
